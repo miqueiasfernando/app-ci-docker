@@ -31,7 +31,7 @@ Os containers se comunicam em rede e compartilham volumes para persistência de 
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/miqueiasfernando/app-ci-docker.git
    cd seu-repositorio
    ```
 
@@ -70,7 +70,6 @@ mysql -h 127.0.0.1 -P 3306 -u admin -p
 ├── system/              # Núcleo do CodeIgniter
 ├── docker/
 │   └── Dockerfile       # Imagem personalizada do container PHP + Apache
-│   └── vhost.conf       # Configuraração do vhost do Apache dentro do container
 ├── docker-compose.yml   # Orquestração dos serviços
 ├── index.php
 └── ...
@@ -103,13 +102,3 @@ docker-compose down -v --rmi all
 ## ✍️ Contribuições
 
 Sinta-se livre para abrir issues ou enviar pull requests com melhorias, correções ou sugestões para o projeto.
-
----
-
-## 📄 Licença
-
-Este projeto é licenciado sob a [MIT License](LICENSE).
-
----
-
-Feito com ❤️ usando CodeIgniter + Docker
